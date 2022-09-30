@@ -1,0 +1,61 @@
+{%extends 'base.html' %}
+<section>
+    {%block title %} Add {%endblock%} {%block body%}
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-2 mx-auto">
+            
+   <form action="{{ url_for('todo.predict')}}" method="post" class="form-inline" >
+        <div class="form-group">
+        
+            <label for="Alcohol" >Alcohol</label>
+            <input type="number" name="Alcohol" placeholder="Alcohol" required="required" />
+        
+            <label for="Malic_Acid">Malic Acid</label>
+            <input type="number" name="Malic_Acid" placeholder="Malic Acid" required="required" />
+
+            <label for="Ash" >Ash</label>
+            <input type="number" name="Ash" placeholder="Ash" required="required" />
+            
+            <label for="Alcalinity_of_Ash" >Alcalinity of Ash</label>
+            <input type="number" name="Alcalinity_of_Ash" placeholder="Alcalinity of Ash" required="required" />
+        
+            <label for="Magnesium" >Magnesium</label>
+            <input type="number" name="Magnesium" placeholder="Magnesium" required="required" />
+        
+            <label for="Total_Phenols" >Total Phenols</label>
+            <input type="number" name="Total_Phenols" placeholder="Total Phenols" required="required" />
+        
+            <label for="Flavanoids" >Flavanoids</label>
+            <input type="number" name="Flavanoids" placeholder="Flavanoids" required="required" />
+        
+            <label for="Nonflavanoid_phenols" >Nonflavanoid phenols</label>
+            <input type="number" name="Nonflavanoid_phenols" placeholder="Nonflavanoid phenols" required="required" />
+        
+            <label for="Proanthocyanins" >Proanthocyanins</label>
+            <input type="number" name="Proanthocyanins" placeholder="Proanthocyanins" required="required" />
+
+            <label for="Color_Intensity" >Color Intensity</label>
+            <input type="number" name="Color_Intensity" placeholder="Color Intensity" required="required" />
+
+            <label for="Hue" >Hue</label>
+            <input type="number" name="Hue" placeholder="Hue" required="required" />
+            
+            <label for="POD280/OD315_diluted_wines" >POD280/OD315 diluted wines</label>
+            <input type="number" name="OD280/OD315_diluted_wines" placeholder="POD280/OD315 diluted wines" required="required" />
+        
+            <label for="Proline" >Proline</label>
+            <input type="number" name="Proline" placeholder="Proline" required="required" />
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        <br>
+        <br>
+      
+    </div>
+</div>
+</div> 
+    </form>
+</section>
+{%endblock%}

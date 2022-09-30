@@ -1,0 +1,23 @@
+{%extends 'base.html' %} {%block body%}
+
+<div class="title relative">
+    Wine Classification
+    <a class="position-end btn btn-default" href="{{url_for('todo.predict')}}">Predict</button>
+</div>
+
+    {% for prediction in predictions %}
+     <a href="#" class="list-group-item list-group-item-action"></a>
+        <table width:100%>
+            <tr>
+              <th>Wine Prediction Class</th>
+              <th>Parameters</th>
+            </tr>
+            <tr>
+              <td> Class {{prediction['wine_prediction']}}</td>
+              <td >{{prediction['wine_features']}} </td>
+            </tr>
+          </table
+        
+    {%endfor%}
+
+{%endblock%}
