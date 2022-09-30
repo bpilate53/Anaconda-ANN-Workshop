@@ -1,3 +1,5 @@
+#Code adapted from University of South Alabama course ISC  629 course: Python Flask Workshop 
+#https://github.com/mahesh6420/flask-lab
 import pymongo
 
 class Database:

@@ -1,3 +1,6 @@
+#Code adapted from University of South Alabama course ISC  629 course: Python Flask Workshop 
+#https://github.com/mahesh6420/flask-lab
+
 from http import client
 from flask import Flask, render_template
 import os
