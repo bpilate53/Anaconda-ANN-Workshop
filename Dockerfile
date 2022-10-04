@@ -1,14 +1,16 @@
-FROM python:3.8-alpine
+FROM python:3.7-slim
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+COPY requirements1.txt requirements1.txt
+
+RUN pip install numpy
+RUN pip install -r requirements1.txt
 
 COPY . /app
 
 EXPOSE 3000
 
-# CMD ["flask", "run", "-p 3000"]
+
 ENTRYPOINT [ "python" ]
 CMD ["app.py"]
